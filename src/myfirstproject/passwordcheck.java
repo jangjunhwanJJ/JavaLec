@@ -36,7 +36,7 @@ public class passwordcheck {
         if(result == true) {
         	System.out.println("비밀번호에 기호(SIGN)가 포함되어 있습니다.");
         }else {
-        	System.out.println("비밀번호에 기호(SIGN)가 포함되어 있지 않습니다.");
+        	System.out.println("비밀번호에 기호(SIGN)가 포함되어 있지 않습니다."); 
         }
         /*
         result = false;
