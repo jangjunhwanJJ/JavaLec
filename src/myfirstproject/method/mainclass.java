@@ -6,16 +6,18 @@ public class mainclass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MethodPractice practice=new MethodPractice();
-
-		String input= JOptionPane.showInputDialog("값1을 넣어주세요");
-		String input2= JOptionPane.showInputDialog("값2을 넣어주세요");
+		SungJuk rec = new SungJuk();
 		
-		int x=Integer.parseInt(input);
-		int y=Integer.parseInt(input2);
-		 
-		practice.gugudan02(x,y);
-		System.out.println();
+		rec.stdNum=JOptionPane.showInputDialog("학번");
+		rec.stdName=JOptionPane.showInputDialog("이름");
+		rec.kor=Integer.parseInt(JOptionPane.showInputDialog("국어 점수"));
+		rec.eng=Integer.parseInt(JOptionPane.showInputDialog("영어 점수"));
+		rec.mat=Integer.parseInt(JOptionPane.showInputDialog("수학 점수"));
+		
+		System.out.println(rec.stdNum+rec.stdName+"의 성적입니다.");
+		
+		rec.sum();
+		rec.ave();
 
 
 	}
