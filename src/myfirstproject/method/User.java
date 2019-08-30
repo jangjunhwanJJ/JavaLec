@@ -22,12 +22,12 @@ public class User {
 	
 	public boolean signUp(User user) {
 		System.out.println("회원가입 했습니다.");
-		return 1;
+		return true;
 	}
 	
 	public boolean edit(User user) {
 		System.out.println(user.username+"정보변경했습니다.");
-		return 1;
+		return true;
 	}
 
 }
